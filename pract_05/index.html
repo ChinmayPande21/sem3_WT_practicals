@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Student Information</title>
+</head>
+<body>
+   <h1>Student Information</h1>
+   <button onclick="getSecondStudent()">Get Second Student's Info</button>
+
+   <h2>Second Student’s Data:</h2>
+   <div id="second-student-info"></div>
+
+   <script>
+      // Function to load XML file
+      function loadXML() {
+         return fetch('students.xml')
+            .then(response => response.text())
+            .then(str => {
+               const parser = new DOMParser();
+               return parser.parseFromString(str, "application/xml");
+            });
+      }
+
+      // Function to get 2nd student data
+      function getSecondStudent() {
+         loadXML().then(xmlDoc => {
+            const students = xmlDoc.getElementsByTagName("student");
+
+            if (students.length >= 2) {
+               const second = students[1]; // index 1 → 2nd student
+               const id = second.getElementsByTagName("id")[0].textContent;
+               const name = second.getElementsByTagName("name")[0].textContent;
+               const course = second.getElementsByTagName("course")[0].textContent;
+               const email = second.getElementsByTagName("email")[0].textContent;
+
+               document.getElementById("second-student-info").innerHTML = `
+                  <p><strong>ID:</strong> ${id}</p>
+                  <p><strong>Name:</strong> ${name}</p>
+                  <p><strong>Course:</strong> ${course}</p>
+                  <p><strong>Email:</strong> ${email}</p>
+               `;
+            } else {
+               alert("Less than 2 students in the data!");
+            }
+         }).catch(err => console.error("Error loading XML:", err));
+      }
+   </script>
+</body>
+</html>
