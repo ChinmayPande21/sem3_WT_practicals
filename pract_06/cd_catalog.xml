@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+    <CD>
+        <title>leader</title>
+        <artist>Chinmay Pande</artist>
+        <country>India</country>
+        <company>paints</company>
+        <price>100.5</price>
+        <year>2006</year>
+    </CD>
+
+    
+    <CD>
+        <title>member1</title>
+        <artist>Rushikesh Bhondekar</artist>
+        <country>USA</country>
+        <company>rushi.co</company>
+        <price>20.1</price>
+        <year>2005</year>
+    </CD>
+
+    <CD>
+        <title>member2</title>
+        <artist>Mayur Nagpure</artist>
+        <country>Russia</country>
+        <company>reti.co</company>
+        <price>13000</price>
+        <year>2006</year>
+    </CD>
+
+    <CD>
+        <title>member3</title>
+        <artist>Charan Chumar</artist>
+        <country>Africa</country>
+        <company>fevicol</company>
+        <price>10</price>
+        <year>2000</year>
+    </CD>
+
+
+</CATALOG>
