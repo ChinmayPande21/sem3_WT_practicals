@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <title>JSON Example - Programming Books</title>
+      <script language="javascript">
+         var books = [
+            { "language": "C", "edition": "second", "author": "Dennis Ritchie" },
+            { "language": "C++", "edition": "fourth", "author": "E. Balagurusamy" },
+            { "language": "Java", "edition": "third", "author": "Herbert Schildt" },
+            { "language": "Python", "edition": "first", "author": "Mark Lutz" }
+         ];
+
+         document.write("<h1>Programming Books Information</h1><br>");
+         for (var i = 0; i < books.length; i++) {
+            document.write("<h3>Language: " + books[i].language + "</h3>");
+            document.write("<h3>Edition: " + books[i].edition + "</h3>");
+            document.write("<h3>Author: " + books[i].author + "</h3>");
+            document.write("<hr>");
+         }
+      </script>
+   </head>
+   <body>
+   </body>
+</html>
