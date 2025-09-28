@@ -1,0 +1,46 @@
+p{
+    color:rgb(0, 0, 0);
+    background-color: aqua;
+    text-align: center;
+}
+body{
+    
+    background-image: url('https://bsmedia.business-standard.com/_media/bs/img/article/2016-01/24/full/1453649981-83.jpg');
+    background-repeat: repeat;
+    background-size: 400px;
+}   
+
+/* link edit */
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    background-color:yellow;
+
+}
+h2{
+    background-color: blue;
+    
+    color:chartreuse;
+}
+div{
+    background-color: coral;
+}
+.move-cursor{
+    cursor: move;
+}
+.pointer-cursor{
+    cursor: pointer;
+}
+.text-cursor{
+    cursor: text;
+}
+.cross-cursor{
+    cursor: crosshair;
+}
+#unique{
+    cursor: not-allowed;
+}
